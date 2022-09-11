@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" th:href="@{/css/join.css}">
+</head>
+<body>
+<div class="content">
+    <div class="image"></div>
+    <div class="container">
+        <h2>My Profile</h2>
+        <form th:object="${member}" th:action="@{/member/profile}" method="post" onsubmit="return check();">
+            <div class="userpw">
+                <label>
+                    <input type="password" th:field="*{memberpw}" placeholder="비밀번호" maxlength="10">
+                </label>
+                <label>
+                    <input type="password" id="pwConfirm" placeholder="비밀번호 확인" maxlength="10">
+                </label>
+            </div>
+            <div class="membername">
+                <label>
+                    <input type="text" th:field="*{membername}" placeholder="이름" readonly>
+                </label>
+            </div>
+            <div class="emailPhone">
+                <label>
+                    <input type="email" th:field="*{email}" placeholder="이메일">
+                </label>
+                <label>
+                    <input type="tel" th:field="*{phone}" placeholder="전화번호">
+                </label>
+            </div>
+            <div class="address">
+                <label>
+                    <input type="text" th:field="*{address}" placeholder="주소">
+                </label>
+            </div>
+            <div class="btn_submit">
+                <input type="submit" value="save">
+                <input type="button" value="back" onclick="location.href='../'">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+                xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>boardlist</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">SCIT Board</h2>
+        <div class="header-link">
+            <div sec:authorize="isAuthenticated()">
+                <a th:href="@{/board/post}">Post</a>
+            </div>
+            <div>
+                <a href="../">HOME</a>
+            </div>
+        </div>
+        <div class="bContent">
+
+        </div>
+        <div class="page">
+
+        </div>
+        <div class="search">
+
+        </div>
+    </div>
+</body>
+</html>

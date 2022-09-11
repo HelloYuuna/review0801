@@ -1,0 +1,95 @@
+body {
+    background: aliceblue;
+}
+
+div.content {
+    width: 700px;
+    margin: auto auto;
+}
+
+h2 {
+    color: #354f52;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+div.image {
+    /*border: 1px solid #0077b6;*/
+    display: inline-block;
+    width: 300px;
+    height: 480px;
+    float: left;
+    background-image: url("https://images.unsplash.com/photo-1455218873509-8097305ee378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    opacity: 0.8;
+    /*background-position: 20% 300px;*/
+
+}
+
+div.container {
+    /*border: 1px solid #0077b6;*/
+    display: inline-block;
+    width: 400px;
+    height: 450px;
+    float: left;
+    /*padding-left: 40px;*/
+    padding-top: 30px;
+    background: white;
+    box-shadow: 1px 2px 30px 1px #dbdbdb;
+}
+
+input#btn_idChk {
+    margin-left: 10px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel] {
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 12px;
+    width: 140px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+input#memberid,
+input#memberpw,
+input#membername,
+input#email,
+input#address{
+    margin-left: 40px;
+}
+
+.address input[type=text] {
+    width: 300px;
+    padding-left: 10px;
+}
+
+/* 에러 표현 */
+.invaild {
+    border-color: #0077b6;
+}
+
+div.btn_submit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+input[type=submit],
+input[type=button],
+input[type=reset]{
+    border:none;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    background: #354f52;
+    color: #fff;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover{
+    background: #3a585b;
+}

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    background: aliceblue;
+}
+
+div.container {
+    width: 300px;
+    border-radius: 10px;
+    margin: auto auto;
+    text-align: center;
+    background: #fff;
+    /*background-image: url("https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    box-shadow: 1px 2px 30px 1px #dbdbdb;
+    /*opacity: 0.3;*/
+}
+
+h2 {
+    /*color: #fff;*/
+    color: #2f3e46;
+    padding-top: 20px;
+}
+
+input[type=text],
+input[type=password] {
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 12px;
+    width: 140px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+input[type=submit],
+input[type=button] {
+    border:none;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    background: #354f52;
+    color: #fff;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover {
+    background: #426165;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background: #668579;
+    color: #fff
+}
+
+div#white {
+    color: #0077b6;
+    margin-top: 30px;
+}

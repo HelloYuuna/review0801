@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>idChk Form</title>
+    <script th:src="@{/js/join.js}"></script>
+</head>
+<body>
+    <div>
+        <form action="idChk" method="post" onsubmit="return idChk();">
+            <label>Search Id:
+                <input type="text" name="searchID" id="searchID" maxlength="10" required placeholder="id">
+            </label>
+            <input type="submit" value="Search">
+        </form>
+        <div th:if="${searchID} ne null">
+            <div th:if="${result}">
+                <p><span>[[${searchID}]]는 사용할 수 있는 ID</span></p>
+                <input th:searchID="${searchID}" type="button" value="USE" onclick="backtoJoin(this.getAttribute('searchID'))">
+            </div>
+            <div th:if="not ${result}">
+                <p><span>[[${searchID}]]는 사용중인 ID</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
